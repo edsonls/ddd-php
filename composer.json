@@ -13,12 +13,20 @@
     "php": "^7.4",
     "ext-json": "*"
   },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
   "autoload": {
     "psr-4": {
       "Domain\\": "Domain/",
       "Shared\\": "Shared/",
       "Test\\": "Tests/"
     }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "Tests/"
+    ]
   },
   "config": {
     "preferred-install": "dist",
