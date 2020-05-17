@@ -1,0 +1,30 @@
+{
+  "name": "example/DDD",
+  "description": "exemplo de DDD em php do curso da udemy",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "edson",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4.*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Domain\\": "Domain/",
+      "Shared\\": "Shared/",
+      "Test\\": "Tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "disable-tls": true
+  },
+  "prefer-stable": true
+}
